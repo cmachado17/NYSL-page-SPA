@@ -1,0 +1,292 @@
+/* body {
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url(images/soccer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+} */
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(images/soccer.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  min-height: 100px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.logo {
+  float: left;
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+nav {
+  padding: 0%;
+}
+
+.navbar {
+  padding: 0%;
+  /* padding-top: px;
+  padding-bottom: 10px; */
+  font-style: initial;
+  background-color: black;
+}
+.navbutton{
+  background-color: black;
+}
+.navbar-collapse{
+  text-align: center;
+}
+
+
+#bodycontent {
+  position: center;
+  border-style: dashed;
+  border-color: black;
+  border-width: 3px;
+  text-align: justify;
+  background: rgba(245, 245, 245, 0.856);
+  -webkit-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* .navbar-collapse {
+  border-style: solid;
+  border-color: black;
+  border-width: 1x;
+
+} */
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #3b9218;
+}
+
+a {
+  color: #3b9218;
+  text-decoration: none;
+  background-color: transparent;
+}
+#navbar button{
+  color: rgb(238, 240, 239);
+}
+.pulsate {
+  color: rgb(238, 240, 239);
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.3;
+}
+@-webkit-keyframes pulsate {
+  0% { 
+      opacity: 0.5;
+      color: rgb(238, 240, 239);
+  }
+  50% { 
+      opacity: 1.0;
+      color: rgb(115, 247, 103);
+  }
+  100% { 
+      opacity: 0.5;
+      color: rgb(56, 247, 8);
+  }
+}
+.footer {
+  font-size: 12px;
+  background: rgba(245, 245, 245, 0.856);
+  border-style: solid;
+  border-color: black;
+  border-width: 1x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+#bodycontent h1 {
+  font-size: 1.5em;
+}
+
+#bodycontent h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+#bodycontent h2 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+#bodycontent ul {
+  list-style-type: square;
+}
+.table{
+  font-size: 100%;
+}
+.table-responsive{
+  display:grid;
+}
+#infotable th {
+  text-decoration: underline;
+  padding: 0 1em;
+  padding-top: 1em;
+}
+
+#infotable td {
+  text-align: left;
+  padding: 0 1em;
+}
+
+#upcoming h2 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: none;
+}
+
+#about h3,
+#titlecenter h1,
+#titlecenter h2 {
+  font-weight: bold;
+}
+
+#infotable h3,
+#rules h3 {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#gamelocations td {
+  padding: 2em;
+}
+
+fieldset label {
+  padding-left: 2em;
+}
+
+.impinfo {
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 0em;
+}
+
+.note {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.indent {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.uniformchoice,
+.contract {
+  font-size: 0.8em;
+}
+
+.announcement {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#first_name,
+#last_name,
+#street_address,
+#city,
+#zip,
+#birth_date,
+#parent_guardian,
+#contact_phone,
+#contact_email,
+#signature,
+#sig_date {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#first_name,
+#last_name,
+#parent_guardian,
+#signature {
+  width: 50%;
+}
+
+#street_address {
+  width: 65%;
+}
+
+#city,
+#contact_email {
+  width: 55%;
+}
+
+fieldset {
+  border: solid 1px green;
+  margin: 2em 0;
+}
+
+legend {
+  width: inherit;
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+form h3 {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.stylized label {
+  width: 12em;
+  padding-right: 1em;
+  text-align: left;
+  float: left;
+}
+
+input {
+  padding: 4px 2px;
+  border: solid 1px green;
+}
+
+#ancla a {
+  font-size: 12px;
+}
+.none{
+  display: none;
+}
+.show{
+  display: block;
+}
+.reducir{
+  font-size: 100%;
+}
+#mostrarSep, #mostrarOct{
+background-color: #3b9218;
+color:white;
+}
